@@ -73,4 +73,63 @@ while user_input_counter < 9:
 
     # array of pure user inputs
     test = [c for c in board if c != "|" and c != "\n"]
-    print(test)
+
+    # check who won
+
+    # same line horizontally
+    if test[0] == "x" and test[1] == "x" and test[2] == "x":
+        print("The X won!")
+        break
+    elif test[3] == "x" and test[4] == "x" and test[5] == "x":
+        print("The X won!")
+        break
+    elif test[6] == "x" and test[7] == "x" and test[8] == "x":
+        print("The X won!")
+        break
+
+    if test[0] == "o" and test[1] == "o" and test[2] == "o":
+        print("The O won!")
+        break
+    elif test[3] == "o" and test[4] == "o" and test[5] == "o":
+        print("The O won!")
+        break
+    elif test[6] == "o" and test[7] == "o" and test[8] == "o":
+        print("The O won!")
+        break
+
+    # same line vertically
+    if test[0] == "x" and test[3] == "x" and test[6] == "x":
+        print("The X won!")
+        break
+    elif test[1] == "x" and test[4] == "x" and test[7] == "x":
+        print("The X won!")
+        break
+    elif test[2] == "x" and test[5] == "x" and test[8] == "x":
+        print("The X won!")
+        break
+
+    if test[0] == "o" and test[3] == "o" and test[6] == "o":
+        print("The O won!")
+        break
+    elif test[1] == "o" and test[4] == "o" and test[7] == "o":
+        print("The O won!")
+        break
+    elif test[2] == "o" and test[5] == "o" and test[8] == "o":
+        print("The O won!")
+        break
+
+    # crossed
+    if test[0] == "x" and test[4] == "x" and test[8] == "x":
+        print("The X won!")
+        break
+    elif test[2] == "x" and test[4] == "x" and test[6] == "x":
+        print("The X won!")
+        break
+
+    if test[0] == "o" and test[4] == "o" and test[8] == "o":
+        print("The O won!")
+        break
+    elif test[2] == "o" and test[4] == "o" and test[6] == "o":
+        print("The O won!")
+        break
+
